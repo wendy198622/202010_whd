@@ -886,7 +886,7 @@ section .title h3:before {
   cursor: pointer;
 }
 
-#section5 .content .popup.is-acted {
+#section5 .content .popup.is_acted {
   display: block;
 }
 
