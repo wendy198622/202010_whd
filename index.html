@@ -22,7 +22,7 @@
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/vue.js"></script>
 	<script type="text/javascript" src="js/imgLiquid-min.js"></script>
-	<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -205,17 +205,17 @@
 							<div class="item">
 								<div class="btn wow bounceInUp" data-wow-delay=".6s"><a href="#">WEB DESIGN</a></div>
 								<ul>
-									<li><a href="#"><img src="img/webdesign_01.jpg" alt="" class=" wow bounceInUp"></a>
+									<li><a href="http://zyed.com.tw/yuantai/" target="_blank"><img src="img/webdesign_01.jpg" alt="" class=" wow bounceInUp"></a>
 									</li>
-									<li><a href="#"><img src="img/webdesign_02.jpg" alt="" class=" wow bounceInUp"
+									<li><a href="http://zyed.com.tw/GrandHighness/" target="_blank"><img src="img/webdesign_02.jpg" alt="" class=" wow bounceInUp"
 												data-wow-delay=".2s"></a></li>
-									<li><a href="#"><img src="img/webdesign_03.jpg" alt="" class=" wow bounceInUp"
+									<li><a href="http://zyed.com.tw/CUPID/" target="_blank"><img src="img/webdesign_03.jpg" alt="" class=" wow bounceInUp"
 												data-wow-delay=".4s"></a></li>
-									<li><a href="#"><img src="img/webdesign_04.jpg" alt="" class=" wow bounceInUp"
+									<li><a href="http://zyed.com.tw/Parkhouse/" target="_blank"><img src="img/webdesign_04.jpg" alt="" class=" wow bounceInUp"
 												data-wow-delay=".6s"></a></li>
-									<li><a href="#"><img src="img/webdesign_05.jpg" alt="" class=" wow bounceInUp"
+									<li><a href="http://zyed.com.tw/CingTang4seasons/" target="_blank"><img src="img/webdesign_05.jpg" alt="" class=" wow bounceInUp"
 												data-wow-delay=".8s"></a></li>
-									<li><a href="#"><img src="img/webdesign_06.jpg" alt="" class=" wow bounceInUp"
+									<li><a href="http://zyed.com.tw/GAOFEI/" target="_blank"><img src="img/webdesign_06.jpg" alt="" class=" wow bounceInUp"
 												data-wow-delay="1s"></a></li>
 								</ul>
 							</div>
@@ -432,8 +432,10 @@
 				);
 			},
 			selectmenu: function () {
+				if ($(window).width() < 961) {
 				$('.site-nav').toggleClass('site-nav--open', 500);
 				$('.menu-toggle').toggleClass('open');
+				}
 			},
 			countDown: function () {
 				// var salf = this

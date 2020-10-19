@@ -854,7 +854,7 @@ section .title h3:before {
 
 #section5 .content .popup {
   width: 300px;
-  height: 100px;
+  height: 50px;
   line-height: 50px;
   text-align: center;
   position: fixed;
