@@ -30,22 +30,22 @@
 		<header>
 			<div class="container clearfix">
 				<h1 class="logo"><img src="img/logo_white.svg" alt=""></h1>
-				
+
 				<nav class="site-nav clearfix">
 					<ul class="clearfix" id="topmenu">
-						<li data-menuanchor="page1"><a href="#page1">HOME</a></li>
-						<li data-menuanchor="page2"><a href="#page2">營業項目</a></li>
-						<li data-menuanchor="page3"><a href="#page3">合作案例</a></li>
-						<li data-menuanchor="page4"><a href="#page4">關於萬亨達</a></li>
-						<li data-menuanchor="page5"><a href="#page5">聯繫我們</a></li>
-					</ul> 
+						<li data-menuanchor="page1" v-on:click="selectmenu()"><a href="#page1">HOME</a></li>
+						<li data-menuanchor="page2" v-on:click="selectmenu()"><a href="#page2">營業項目</a></li>
+						<li data-menuanchor="page3" v-on:click="selectmenu()"><a href="#page3">合作案例</a></li>
+						<li data-menuanchor="page4" v-on:click="selectmenu()"><a href="#page4">關於萬亨達</a></li>
+						<li data-menuanchor="page5" v-on:click="selectmenu()"><a href="#page5">聯繫我們</a></li>
+					</ul>
 					<div class="social clearfix">
 						<a class="facebook" href="#"><img src="img/header_facebook.svg" alt=""></a>
 						<a class="mail" href="#"><img src="img/header_mail.svg" alt=""></a>
 					</div>
 				</nav>
-				
-				<div class="menu-toggle">
+
+				<div class="menu-toggle" v-on:click="selectmenu()">
 					<div class="hamburger"></div>
 				</div>
 			</div>
@@ -139,7 +139,7 @@
 							<div class="item clearfix wow bounceInUp" data-wow-delay=".2s">
 								<div class="icon"><img src="img/media_icon_2-2.svg" alt=""></div>
 								<div class="txtBox">
-									<h4>平面與數位媒體												
+									<h4>平面與數位媒體
 										<span>(Newspaper & Digital media)</span>
 									</h4>
 									<ul>
@@ -197,19 +197,26 @@
 									<p>我們提供專業行銷服務，並熟知擅長各種媒體與實體行銷整合應用，提供最新的數位行銷趨勢，致力於為您量身打造最適合的整體行銷策略，達成客戶的營銷目標。</p>
 								</div>
 								<div class="btn wow bounceInUp" data-wow-delay=".2s"><a href="#">臉書貼文</a></div>
-								<div class="iconBox wow bounceInUp" data-wow-delay=".4s"><img src="img/market_img.jpg" alt=""></div>
+								<div class="iconBox wow bounceInUp" data-wow-delay=".4s"><img src="img/market_img.jpg"
+										alt=""></div>
 							</div>
 						</div>
 						<div class="marketGroup">
 							<div class="item">
 								<div class="btn wow bounceInUp" data-wow-delay=".6s"><a href="#">WEB DESIGN</a></div>
 								<ul>
-									<li><a href="#"><img src="img/webdesign_01.jpg" alt="" class=" wow bounceInUp"></a></li>
-									<li><a href="#"><img src="img/webdesign_02.jpg" alt="" class=" wow bounceInUp" data-wow-delay=".2s"></a></li>
-									<li><a href="#"><img src="img/webdesign_03.jpg" alt="" class=" wow bounceInUp" data-wow-delay=".4s"></a></li>
-									<li><a href="#"><img src="img/webdesign_04.jpg" alt="" class=" wow bounceInUp" data-wow-delay=".6s"></a></li>
-									<li><a href="#"><img src="img/webdesign_05.jpg" alt="" class=" wow bounceInUp" data-wow-delay=".8s"></a></li>
-									<li><a href="#"><img src="img/webdesign_06.jpg" alt="" class=" wow bounceInUp" data-wow-delay="1s"></a></li>
+									<li><a href="#"><img src="img/webdesign_01.jpg" alt="" class=" wow bounceInUp"></a>
+									</li>
+									<li><a href="#"><img src="img/webdesign_02.jpg" alt="" class=" wow bounceInUp"
+												data-wow-delay=".2s"></a></li>
+									<li><a href="#"><img src="img/webdesign_03.jpg" alt="" class=" wow bounceInUp"
+												data-wow-delay=".4s"></a></li>
+									<li><a href="#"><img src="img/webdesign_04.jpg" alt="" class=" wow bounceInUp"
+												data-wow-delay=".6s"></a></li>
+									<li><a href="#"><img src="img/webdesign_05.jpg" alt="" class=" wow bounceInUp"
+												data-wow-delay=".8s"></a></li>
+									<li><a href="#"><img src="img/webdesign_06.jpg" alt="" class=" wow bounceInUp"
+												data-wow-delay="1s"></a></li>
 								</ul>
 							</div>
 						</div>
@@ -230,8 +237,9 @@
 								<img src="img/digital_img1.jpg" alt="">
 							</div>
 							<div class="txtBox wow bounceInUp" data-wow-delay=".2s">
-								<div class="smallTitle">WELCOME  TO  OUR  TEAM</div>
-								<p>萬亨達數位行銷是一群從事廣告、媒體與數位行銷超過五年夥伴們所組成的團隊。我們年輕有活力、熱誠滿點，提供獨一無二的創意與技術，滿足客戶的各種行銷需求，替代理商與品牌客戶實現他們的經營理念。</p>
+								<div class="smallTitle">WELCOME TO OUR TEAM</div>
+								<p>萬亨達數位行銷是一群從事廣告、媒體與數位行銷超過五年夥伴們所組成的團隊。我們年輕有活力、熱誠滿點，提供獨一無二的創意與技術，滿足客戶的各種行銷需求，替代理商與品牌客戶實現他們的經營理念。
+								</p>
 							</div>
 						</div>
 						<div class="digitalGroup">
@@ -271,9 +279,10 @@
 									</div>
 									<div class="item wow bounceInUp" data-wow-delay=".6s">
 										<span>信件內容(MESSAGE)</span>
-										<textarea id="message" name="message" placeholder="" rows="4" cols="50"></textarea>
+										<textarea id="message" name="message" placeholder="" rows="4"
+											cols="50"></textarea>
 									</div>
-		
+
 									<button v-on:click="sendEmail()">確定送出</button>
 								</div>
 							</div>
@@ -287,7 +296,7 @@
 											<img src="img/icon_location.svg" alt="">
 										</div>
 										<p>Location
-											<span>330 桃園市桃園區成功路二段105號9樓</span> 
+											<span>330 桃園市桃園區成功路二段105號9樓</span>
 										</p>
 									</li>
 									<li class=" wow bounceInUp" data-wow-delay=".4s">
@@ -329,11 +338,25 @@
 	</div>
 </body>
 <script>
+
+	if ($(window).width() < 961) {
+		$('.mob_media').addClass("slider_mob");
+	} else {
+		$('.mob_media').removeClass("slider_mob");
+	}
+
+	$('.slider_mob').slick({
+		infinite: true,
+		autoplay: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		// centerMode: true,
+		arrows: true,
+		dots: false,
+	});
+
 	new WOW().init();
 	$(".imgLiquidFill").imgLiquid();
-
-	
-
 
 	// $(".gotoTop").on("click", function () {
 	// 	$("html, body").animate({ scrollTop: 0 }, 500);
@@ -343,7 +366,7 @@
 
 		var myFullpage = new fullpage('#fullpage', {
 			anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-      		menu: '#topmenu',
+			menu: '#topmenu',
 			sectionsColor: ['#EF8200', '#fff', '#fff', '#fff', '#fff'],
 			navigation: false,
 			// navigationPosition: 'right',
@@ -352,11 +375,10 @@
 			// autoScrolling: false,
 			responsiveWidth: 960
 		});
-
 	});
 
-	$(document).on('click', '.gotoTop', function(){
-  		fullpage_api.moveTo('page1', 0);
+	$(document).on('click', '.gotoTop', function () {
+		fullpage_api.moveTo('page1', 0);
 	});
 
 	new Vue({
@@ -409,46 +431,43 @@
 					}
 				);
 			},
+			selectmenu: function () {
+				$('.site-nav').toggleClass('site-nav--open', 500);
+				$('.menu-toggle').toggleClass('open');
+			},
 			countDown: function () {
-				var salf = this
-				var endTime = moment(salf.endTime)
-				var timer = setInterval(() => {
-					var nowTime = moment()
-					var duration = moment.duration(endTime.diff(nowTime))
-					var day = parseInt(duration.asDays()) >= 0 ? parseInt(duration.asDays()) : 0
-					var hour = duration.get('hours') >= 0 ? duration.get('hours') : 0
-					var min = duration.get('minutes') >= 0 ? duration.get('minutes') : 0
-					var sec = duration.get('seconds') >= 0 ? duration.get('seconds') : 0
+				// var salf = this
+				// var endTime = moment(salf.endTime)
+				// var timer = setInterval(() => {
+				// 	var nowTime = moment()
+				// 	var duration = moment.duration(endTime.diff(nowTime))
+				// 	var day = parseInt(duration.asDays()) >= 0 ? parseInt(duration.asDays()) : 0
+				// 	var hour = duration.get('hours') >= 0 ? duration.get('hours') : 0
+				// 	var min = duration.get('minutes') >= 0 ? duration.get('minutes') : 0
+				// 	var sec = duration.get('seconds') >= 0 ? duration.get('seconds') : 0
 
-					if (day == 0 && hour == 0 && min == 0 && sec == 0) {
-						clearInterval(timer)
-						return
-					}
-					salf.day = day
-					salf.hour = hour
-					salf.min = min
-					salf.sec = sec
-				}, 1000)
+				// 	if (day == 0 && hour == 0 && min == 0 && sec == 0) {
+				// 		clearInterval(timer)
+				// 		return
+				// 	}
+				// 	salf.day = day
+				// 	salf.hour = hour
+				// 	salf.min = min
+				// 	salf.sec = sec
+				// }, 1000)
 			}
 		}
 	})
 </script>
 <script>
 
-	$('.menu-toggle').click(function() {
-	
-		$('.site-nav').toggleClass('site-nav--open', 500);
-		$(this).toggleClass('open');
-	
-	})
 
-	if($(window).width() < 961)
-	{
+	if ($(window).width() < 961) {
 		$('.mob_media').addClass("slider_mob");
 	} else {
 		$('.mob_media').removeClass("slider_mob");
 	}
-	
+
 	$('.slider_mob').slick({
 		infinite: true,
 		autoplay: true,
@@ -458,7 +477,7 @@
 		arrows: true,
 		dots: false,
 	});
-	
+
 
 </script>
 
