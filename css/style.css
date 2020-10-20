@@ -591,6 +591,17 @@ section .title h3:before {
 #section3 .content .marketGroup .item ul li {
   width: 50%;
   float: left;
+  overflow: hidden;
+}
+
+#section3 .content .marketGroup .item ul li a img {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#section3 .content .marketGroup .item ul li:hover a img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 960px) {
