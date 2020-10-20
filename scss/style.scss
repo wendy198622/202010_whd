@@ -396,11 +396,18 @@ section{
                     height: 36px;
                     border: 1px solid #0C2644;
                     margin-top: 20px;
-                    a{
+                    a,span{
                         width: 100%;
                         font-size: 18px;
                         line-height: 36px;
+                        display: block;
                         color: #0C2644;
+                        transition: all .3s;
+                    }
+                    a:hover{
+                        background-color: #0C2644;
+                        color: #fff;
+
                     }
                 }
                 .iconBox{

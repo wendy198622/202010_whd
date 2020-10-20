@@ -549,11 +549,19 @@ section .title h3:before {
   margin-top: 20px;
 }
 
-#section3 .content .marketGroup .item .btn a {
+#section3 .content .marketGroup .item .btn a, #section3 .content .marketGroup .item .btn span {
   width: 100%;
   font-size: 18px;
   line-height: 36px;
+  display: block;
   color: #0C2644;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#section3 .content .marketGroup .item .btn a:hover {
+  background-color: #0C2644;
+  color: #fff;
 }
 
 #section3 .content .marketGroup .item .iconBox {
