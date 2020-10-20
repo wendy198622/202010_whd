@@ -10,10 +10,10 @@
 	<meta name="Resource-type" content="" />
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="css/slick.css" />
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<!-- js -->
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
@@ -292,28 +292,34 @@
 								<h5 class="logo wow bounceInUp"><img src="img/logo.svg" alt=""></h5>
 								<ul>
 									<li class=" wow bounceInUp" data-wow-delay=".2s">
-										<div class="icon">
-											<img src="img/icon_location.svg" alt="">
-										</div>
-										<p>Location
-											<span>330 桃園市桃園區成功路二段105號9樓</span>
-										</p>
+										<a href="https://goo.gl/maps/NAB4bjWUsQ24Cwi4A" target="_blank">
+											<div class="icon">
+												<img src="img/icon_location.svg" alt="">
+											</div>
+											<p>Location
+												<span>330 桃園市桃園區成功路二段105號9樓</span>
+											</p>
+										</a>
 									</li>
 									<li class=" wow bounceInUp" data-wow-delay=".4s">
-										<div class="icon">
-											<img src="img/icon_call.svg" alt="">
-										</div>
-										<p>Call
-											<span>03-3571518</span>
-										</p>
+										<a href="tel:033571518">
+											<div class="icon">
+												<img src="img/icon_call.svg" alt="">
+											</div>
+											<p>Call
+												<span>03-3571518</span>
+											</p>
+										</a>
 									</li>
 									<li class=" wow bounceInUp" data-wow-delay=".6s">
-										<div class="icon">
-											<img src="img/icon_email.svg" alt="">
-										</div>
-										<p>Email
-											<span>whd.emarketing@gmail.com</span>
-										</p>
+										<a href="mailto:whd.emarketing@gmail.com">
+											<div class="icon">
+												<img src="img/icon_email.svg" alt="">
+											</div>
+											<p>Email
+												<span>whd.emarketing@gmail.com</span>
+											</p>
+										</a>
 									</li>
 								</ul>
 							</div>
@@ -333,46 +339,23 @@
 			</div>
 		</section>
 		<footer>
-			隱私權政策 | Copyright 2020 | 和築建設
+			隱私權政策 | Copyright 2020 | 萬亨達數位行銷
 		</footer>
 	</div>
 </body>
 <script>
 
-	if ($(window).width() < 961) {
-		$('.mob_media').addClass("slider_mob");
-	} else {
-		$('.mob_media').removeClass("slider_mob");
-	}
-
-	$('.slider_mob').slick({
-		infinite: true,
-		autoplay: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		// centerMode: true,
-		arrows: true,
-		dots: false,
-	});
-
 	new WOW().init();
 	$(".imgLiquidFill").imgLiquid();
 
-	// $(".gotoTop").on("click", function () {
-	// 	$("html, body").animate({ scrollTop: 0 }, 500);
-	// });
-
 	$(document).ready(function () {
-
 		var myFullpage = new fullpage('#fullpage', {
 			anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
 			menu: '#topmenu',
 			sectionsColor: ['#EF8200', '#fff', '#fff', '#fff', '#fff'],
 			navigation: false,
-			// navigationPosition: 'right',
 			navigationTooltips: ['01', '02', '03', '04', '05'],
 			scrollBar: true,
-			// autoScrolling: false,
 			responsiveWidth: 960
 		});
 	});
@@ -436,36 +419,14 @@
 			},
 			selectmenu: function () {
 				if ($(window).width() < 961) {
-				$('.site-nav').toggleClass('site-nav--open', 500);
-				$('.menu-toggle').toggleClass('open');
+					$('.site-nav').toggleClass('site-nav--open', 500);
+					$('.menu-toggle').toggleClass('open');
 				}
 			},
 			countDown: function () {
-				// var salf = this
-				// var endTime = moment(salf.endTime)
-				// var timer = setInterval(() => {
-				// 	var nowTime = moment()
-				// 	var duration = moment.duration(endTime.diff(nowTime))
-				// 	var day = parseInt(duration.asDays()) >= 0 ? parseInt(duration.asDays()) : 0
-				// 	var hour = duration.get('hours') >= 0 ? duration.get('hours') : 0
-				// 	var min = duration.get('minutes') >= 0 ? duration.get('minutes') : 0
-				// 	var sec = duration.get('seconds') >= 0 ? duration.get('seconds') : 0
-
-				// 	if (day == 0 && hour == 0 && min == 0 && sec == 0) {
-				// 		clearInterval(timer)
-				// 		return
-				// 	}
-				// 	salf.day = day
-				// 	salf.hour = hour
-				// 	salf.min = min
-				// 	salf.sec = sec
-				// }, 1000)
 			}
 		}
 	})
-</script>
-<script>
-
 
 	if ($(window).width() < 961) {
 		$('.mob_media').addClass("slider_mob");
@@ -478,10 +439,13 @@
 		autoplay: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// centerMode: true,
 		arrows: true,
-		dots: false,
+		dots: false
 	});
+</script>
+<script>
+
+
 
 
 </script>
